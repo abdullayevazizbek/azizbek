@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/scss/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- HEADER START -->
+
+        <header class="header">
+            <div class="canteiner">
+                <div class="header_row">
+                    <div class="header_logo">
+                        <h1>Kang Tutor</h1>
+                    </div>
+                    <div class="header_nav">
+                        <a href="#beranda" class="header_link">Beranda</a>
+                        <a href="#tutorial" class="header_link">Tutorial</a>
+                        <a href="#pemrograman" class="header_link">Pemrograman</a>
+                        <a href="#teknologi" class="header_link">Teknologi</a>
+                        <div class="header_input">
+                            <div id="myLinks">
+                                <form>
+                                    <input type="text" class="header_nav_input" placeholder="Searche...">
+                                </form>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars fe">
+                                    <img src="./assets/icon/searche_icon.svg" alt="">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_mobile">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+                            <i class="fa fa-bars"><img src="./assets/icon/menu_icon.svg" alt=""></i>
+                        </a>
+                        <div id="myLink" class="mylinks">
+                            <div class="header_mobile_link">
+                                <a href="#beranda" class="header_link e">Beranda</a>
+                                <a href="#tutorial" class="header_link e">Tutorial</a>
+                                <a href="#pemrograman" class="header_link e">Pemrograman</a>
+                                <a href="#teknologi" class="header_link e">Teknologi</a>
+                            </div>
+                        <div class="header_input i">
+                            <div id="myLinke">
+                                <form>
+                                    <input type="text" class="header_nav_input" placeholder="Searche...">
+                                </form>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction3()">
+                                <i class="fa fa-bars">
+                                    <img src="./assets/icon/searche_icon.svg" alt="">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </header>
+     <!-- HEADER END -->
+
+    <!-- MAIN START -->
+
+    <main class="main">
+        <div class="canteiner">
+            <div class="main_row">
+                <div class="main_left">
+                    <div class="main_left-box">
+                        <div class="main_left-box-title">
+                            <p>In Label</p>
+                            <h1>Ini Adalah Judul Artikel</h1>
+                            <p><b>By </b>Ridho Satriawan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_right">
+                    <div class="main_right-box">
+                        <button class="main_right-box-btn">
+                            Paling Populer
+                        </button>
+                        <div class="main_right-box-bx">
+                            <div class="main_right-box-bx-left">
+                                
+                            </div>
+                            <div class="main_right-box-bx-right">
+                                <h5>Ini Adalah Judul Artikel</h5>
+                                <p>22 Agustus 2022</p>
+                            </div>
+                        </div>
+                        <div class="main_right-box-bx">
+                            <div class="main_right-box-bx-left">
+                                
+                            </div>
+                            <div class="main_right-box-bx-right">
+                                <h5>Ini Adalah Judul Artikel</h5>
+                                <p>22 Agustus 2022</p>
+                            </div>
+                        </div>
+                        <div class="main_right-box-bx">
+                            <div class="main_right-box-bx-left">
+                                
+                            </div>
+                            <div class="main_right-box-bx-right">
+                                <h5>Ini Adalah Judul Artikel</h5>
+                                <p>22 Agustus 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MAIN END -->
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction3() {
+            var x = document.getElementById("myLinke");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            var x = document.getElementById("myLink");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        myFunction()
+        myFunction3()
+        myFunction2()
+    </script>
+</body>
+
+</html>
