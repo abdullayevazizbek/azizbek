@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
 * {
   margin: 0;
   padding: 0;
@@ -36,7 +36,7 @@ html, body {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 1170px;
-  font-family: "Montserrat", "san-serif";
+  font-family: "Open Sans", "san-serif";
   font-style: normal;
 }
 
@@ -44,15 +44,17 @@ html, body {
 /* HEADER START*/
 .header {
   width: 100%;
-  background-color: #02A28F;
   position: fixed;
   height: 65px;
   z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
 }
 .header_row {
-  padding: 13px 0;
+  height: 100%;
   display: flex;
-  align-items: unset;
+  align-items: center;
   justify-content: space-between;
 }
 .header_logo h1 {
@@ -90,11 +92,24 @@ html, body {
   border: none;
   border-radius: 6px;
 }
+.header_right {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_right_global {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: unset;
+}
 .header_link {
-  font-weight: 600;
-  font-size: 16px;
+  color: #000;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 110%;
-  color: #fff;
   margin-right: 20px;
 }
 .header_mobile {
